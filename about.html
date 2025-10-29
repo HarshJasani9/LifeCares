@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Life Cares</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html"
+          ><span class="brand-dot"></span>Life Cares</a
+        >
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+          <span class="sr-only">Open menu</span><span class="bar"></span
+          ><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="doctor.html">Doctor</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="divider"></li>
+          <li><a class="btn ghost" href="auth.html?mode=signin">Login</a></li>
+          <li><a class="btn solid" href="auth.html?mode=signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1 data-aos="fade-up">About us</h1>
+          <p data-aos="fade-up" data-aos-delay="100">
+            A modern, patient‑first clinic focused on clarity, comfort, and
+            evidence‑based care.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container grid2">
+          <div data-aos="fade-right">
+            <h2>Our mission</h2>
+            <p>
+              Deliver accessible, high‑quality healthcare with transparent
+              communication and zero hassle—from booking to follow‑ups.
+            </p>
+            <ul class="check">
+              <li>
+                Inclusive and WCAG‑minded design across all digital touchpoints
+              </li>
+              <li>Mobile‑first experiences and secure data handling</li>
+              <li>Continuous quality improvement with patient feedback</li>
+            </ul>
+          </div>
+          <div class="stats" data-aos="fade-left">
+            <div class="stat"><span>50+</span> Specialists</div>
+            <div class="stat"><span>30k</span> Patients</div>
+            <div class="stat"><span>98%</span> Satisfaction</div>
+            <div class="stat"><span>24/7</span> Support</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2 data-aos="fade-up">Facilities</h2>
+          <div class="cards">
+            <article class="card" data-aos="zoom-in">
+              <h3>Imaging</h3>
+              <p>Low‑dose CT, MRI, and ultrasound with same‑day reporting.</p>
+            </article>
+            <article class="card" data-aos="zoom-in" data-aos-delay="100">
+              <h3>Labs</h3>
+              <p>High‑throughput diagnostics, secure online results portal.</p>
+            </article>
+            <article class="card" data-aos="zoom-in" data-aos-delay="200">
+              <h3>Urgent Care</h3>
+              <p>Walk‑in clinic staffed by emergency‑trained physicians.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="legal">© <span id="year"></span> Life Cares.</div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

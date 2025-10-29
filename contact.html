@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Life Cares</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html"
+          ><span class="brand-dot"></span>Life Cares</a
+        >
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+          <span class="sr-only">Open menu</span><span class="bar"></span
+          ><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="doctor.html">Doctor</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="divider"></li>
+          <li><a class="btn ghost" href="auth.html?mode=signin">Login</a></li>
+          <li><a class="btn solid" href="auth.html?mode=signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1 data-aos="fade-up">Get in touch</h1>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Call, email, or request an appointment below.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="appointment">
+        <div class="container grid2">
+          <form
+            class="form card-xl"
+            aria-labelledby="appt-title"
+            novalidate
+            data-aos="fade-right"
+          >
+            <h2 id="appt-title">Appointment request</h2>
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+              />
+            </div>
+            <div class="field">
+              <label for="dept">Department</label>
+              <select id="dept" name="dept">
+                <option>Primary Care</option>
+                <option>Cardiology</option>
+                <option>Pediatrics</option>
+                <option>Diagnostics</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Preferred date</label>
+              <input id="date" name="date" type="date" />
+            </div>
+            <div class="field">
+              <label for="msg">Notes</label>
+              <textarea
+                id="msg"
+                name="message"
+                rows="4"
+                placeholder="Symptoms, concerns, availability…"
+              ></textarea>
+            </div>
+            <button class="btn solid" type="submit">Send request</button>
+            <p class="form-hint">
+              Submitting this form does not confirm an appointment; staff will
+              follow up to schedule.
+            </p>
+          </form>
+
+          <aside class="card-xl contact-info" data-aos="fade-left">
+            <h2>Contact info</h2>
+            <p>Phone: +91 98765 43210</p>
+            <p>Email: hello@lifecares.example</p>
+            <p>Hours: Mon–Sat 8:00–20:00</p>
+            <div class="map-embed">
+              <iframe
+                title="Clinic map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=New%20Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              ></iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="legal">© <span id="year"></span> Life Cares.</div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

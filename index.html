@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Life Cares — Stay Safe, Stay Healthy</title>
+    <meta
+      name="description"
+      content="Modern, accessible healthcare website with doctors, services, reviews, and online contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="font"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Life Cares Home">
+          <i class="fa-brands fa-firstdraft"></i>
+          <span class="brand-dot" aria-hidden="true"></span>Life Cares
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+          <span class="sr-only">Open menu</span>
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+
+        <ul id="menu" class="menu">
+          <li><a class="active" href="index.html#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="doctor.html">Doctor</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="divider" aria-hidden="true"></li>
+          <!-- in index.html navbar -->
+          <li><a class="btn ghost" href="auth.html?mode=signin">Login</a></li>
+          <li><a class="btn solid" href="auth.html?mode=signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" class="hero">
+        <div class="container grid2">
+          <div class="hero-copy" data-aos="fade-up">
+            <h1 class="display">
+              <span class="accent">Stay</span> Safe,
+              <span class="accent">Stay</span> Healthy.
+            </h1>
+            <p class="lead">
+              Compassionate care, expert doctors, and seamless digital access
+              for appointments and advice—built with accessibility and trust at
+              the core.
+            </p>
+            <div class="cta">
+              <a class="btn solid lg" href="about.html">Read More</a>
+              <a class="btn ghost lg" href="contact.html">Book Appointment</a>
+            </div>
+            <ul class="badges">
+              <li>24/7 Support</li>
+              <li>Certified Specialists</li>
+              <li>Insurance Friendly</li>
+            </ul>
+          </div>
+          <div class="hero-art" data-aos="zoom-in" aria-hidden="true">
+            <div class="shape bubble"></div>
+            <div class="shape pill"></div>
+            <div class="card float">
+              <div class="pulse"></div>
+              <h3>Vitals Stable</h3>
+              <p>BP 118/76 • 72 bpm</p>
+            </div>
+            <div class="card float delay">
+              <h3>Next Slot</h3>
+              <p>Today, 4:30 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+      <!-- Partnered With — seamless marquee -->
+      <section class="partners" aria-labelledby="partners-head">
+        <div id="partners-head" class="partners-head">
+          <h1>Partnered With</h1>
+        </div>
+        <br />
+        <div class="partners-rail" aria-label="Partner hospitals">
+          <div class="partners-track">
+            <!-- COPY A -->
+            <span class="pill">Apollo</span>
+            <span class="pill">Fortis</span>
+            <span class="pill">Max</span>
+            <span class="pill">Manipal</span>
+            <span class="pill">Narayana</span>
+            <span class="pill">Medanta</span>
+            <span class="pill">Artemis</span>
+            <span class="pill">Aster</span>
+            <span class="pill">AIIMS</span>
+            <span class="pill">BLK</span>
+            <span class="pill">Kokilaben</span>
+
+            <!-- COPY B (exact duplicate, back-to-back) -->
+            <span class="pill">Apollo</span>
+            <span class="pill">Fortis</span>
+            <span class="pill">Max</span>
+            <span class="pill">Manipal</span>
+            <span class="pill">Narayana</span>
+            <span class="pill">Medanta</span>
+            <span class="pill">Artemis</span>
+            <span class="pill">Aster</span>
+            <span class="pill">AIIMS</span>
+            <span class="pill">BLK</span>
+            <span class="pill">Kokilaben</span>
+            <span class="pill">Max</span>
+            <span class="pill">Manipal</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title" class="section-title" data-aos="fade-up">
+            Care you can trust
+          </h2>
+          <p class="section-sub" data-aos="fade-up" data-aos-delay="100">
+            Explore core services delivered by board‑certified specialists with
+            modern facilities.
+          </p>
+
+          <div class="cards" role="list">
+            <article class="card-xl" role="listitem" data-aos="fade-up">
+              <div class="icon steth"></div>
+              <h3>Primary Care</h3>
+              <p>
+                Routine checkups, preventive care, and chronic disease
+                management tailored to individual needs.
+              </p>
+              <a class="link" href="about.html#services">Learn more</a>
+            </article>
+
+            <article
+              class="card-xl"
+              role="listitem"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon heart"></div>
+              <h3>Cardiology</h3>
+              <p>
+                Non‑invasive diagnostics and personalized treatment plans for
+                heart health and wellness.
+              </p>
+              <a class="link" href="doctor.html#specialists">Meet experts</a>
+            </article>
+
+            <article
+              class="card-xl"
+              role="listitem"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon lab"></div>
+              <h3>Diagnostics</h3>
+              <p>
+                State‑of‑the‑art imaging and lab tests with fast, accurate
+                reporting and online access.
+              </p>
+              <a class="link" href="contact.html#appointment">Book test</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials preview -->
+      <section class="section alt" aria-labelledby="testi-title">
+        <div class="container">
+          <h2 id="testi-title" class="section-title" data-aos="fade-up">
+            Patient reviews
+          </h2>
+          <div class="testi-grid">
+            <figure class="testi" data-aos="fade-right">
+              <blockquote>
+                Professional, friendly, and incredibly efficient—from booking to
+                follow‑up.
+              </blockquote>
+              <figcaption>— Aria K.</figcaption>
+            </figure>
+            <figure class="testi" data-aos="fade-left" data-aos-delay="150">
+              <blockquote>
+                Clear explanations and top‑notch facilities. Highly recommended.
+              </blockquote>
+              <figcaption>— Dev P.</figcaption>
+            </figure>
+          </div>
+          <div class="center">
+            <a class="btn ghost" href="review.html">Read all reviews</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-band" aria-labelledby="cta-band-title">
+        <div class="container grid2">
+          <div>
+            <h2 id="cta-band-title">Same‑day appointments available</h2>
+            <p>
+              Use the online request and receive confirmation via email or SMS.
+            </p>
+          </div>
+          <div class="right">
+            <a class="btn solid" href="contact.html#appointment">Request now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container grid3">
+        <div>
+          <a class="brand brand-light" href="index.html"
+            ><span class="brand-dot"></span>Life Cares</a
+          >
+          <p class="foot-copy">
+            Modern, inclusive care powered by secure digital access and a
+            compassionate team.
+          </p>
+        </div>
+        <nav aria-label="Footer">
+          <ul class="foot-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+        <div>
+          <form class="newsletter" novalidate>
+            <label for="news-email">Subscribe for health tips</label>
+            <div class="field-row">
+              <input
+                id="news-email"
+                name="email"
+                type="email"
+                inputmode="email"
+                placeholder="email@domain.com"
+                aria-describedby="news-help"
+              />
+              <button class="btn solid" type="submit">Subscribe</button>
+            </div>
+            <small id="news-help">No spam. Unsubscribe anytime.</small>
+          </form>
+        </div>
+      </div>
+      <div class="legal">
+        © <span id="year"></span> Life Cares. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

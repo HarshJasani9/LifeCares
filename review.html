@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reviews — Life Cares</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html"
+          ><span class="brand-dot"></span>Life Cares</a
+        >
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+          <span class="sr-only">Open menu</span><span class="bar"></span
+          ><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="doctor.html">Doctor</a></li>
+          <li><a class="active" href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="divider"></li>
+          <li><a class="btn ghost" href="auth.html?mode=signin">Login</a></li>
+          <li><a class="btn solid" href="auth.html?mode=signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1 data-aos="fade-up">Patient reviews</h1>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Stories from people who trusted Life Cares.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container testi-grid">
+          <figure class="testi" data-aos="fade-up">
+            <blockquote>
+              Clean clinic, kind staff, and swift diagnosis. Couldn’t ask for
+              better care.
+            </blockquote>
+            <figcaption>— R. Sharma</figcaption>
+          </figure>
+          <figure class="testi" data-aos="fade-up" data-aos-delay="100">
+            <blockquote>
+              The online booking was smooth and the doctor explained every step
+              clearly.
+            </blockquote>
+            <figcaption>— M. D’Souza</figcaption>
+          </figure>
+          <figure class="testi" data-aos="fade-up" data-aos-delay="200">
+            <blockquote>
+              High‑contrast signage and accessible forms made everything easy
+              for my parents.
+            </blockquote>
+            <figcaption>— P. Iyer</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="legal">© <span id="year"></span> Life Cares.</div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

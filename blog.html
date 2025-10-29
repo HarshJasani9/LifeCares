@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Life Cares</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html"
+          ><span class="brand-dot"></span>Life Cares</a
+        >
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+          <span class="sr-only">Open menu</span><span class="bar"></span
+          ><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="doctor.html">Doctor</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li class="divider"></li>
+          <li><a class="btn ghost" href="auth.html?mode=signin">Login</a></li>
+          <li><a class="btn solid" href="auth.html?mode=signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1 data-aos="fade-up">Health insights</h1>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Timely, readable articles to support everyday well‑being.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid3 blog-grid">
+          <article class="card blog" data-aos="fade-up">
+            <h3>Managing blood pressure at home</h3>
+            <p>Simple routines and tracking tips to improve heart health.</p>
+            <a class="link" href="#">Read</a>
+          </article>
+          <article class="card blog" data-aos="fade-up" data-aos-delay="100">
+            <h3>Childhood vaccines: what to expect</h3>
+            <p>A gentle guide for parents on timing, comfort, and safety.</p>
+            <a class="link" href="#">Read</a>
+          </article>
+          <article class="card blog" data-aos="fade-up" data-aos-delay="200">
+            <h3>Understanding lab results</h3>
+            <p>Demystifying common blood tests and when to follow up.</p>
+            <a class="link" href="#">Read</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="legal">© <span id="year"></span> Life Cares.</div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
